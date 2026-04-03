@@ -1,6 +1,6 @@
 {
   "name": "react-native-sms-turbo",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React Native TurboModule for sending SMS on Android (background) and iOS (composer)",
   "main": "lib/commonjs/index.js",
   "module": "lib/module/index.js",
