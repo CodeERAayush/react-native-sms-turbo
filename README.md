@@ -47,6 +47,15 @@ try {
   console.error(error);
 }
 ```
+### Demo 
+```bash
+git clone https://github.com/CodeERAayush/react-native-sms-turbo-demo
+cd react-native-sms-turbo-demo
+npm install
+npm run android
+```
+
+
 
 ## API Reference
 
