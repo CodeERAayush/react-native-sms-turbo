@@ -1,0 +1,80 @@
+{
+  "name": "react-native-sms-turbo",
+  "version": "1.0.0",
+  "description": "React Native TurboModule for sending SMS on Android (background) and iOS (composer)",
+  "main": "lib/commonjs/index.js",
+  "module": "lib/module/index.js",
+  "types": "lib/typescript/index.d.ts",
+  "source": "src/index.ts",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "react-native-sms-turbo.podspec",
+    "!android/build",
+    "!ios/build",
+    "!**/__tests__",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "prepare": "bob build",
+    "typescript": "tsc --noEmit",
+    "lint": "eslint \"**/*.{js,ts,tsx}\""
+  },
+  "keywords": [
+    "react-native",
+    "turbomodule",
+    "sms",
+    "android",
+    "ios",
+    "messaging",
+    "new-architecture"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/codeeraayush/react-native-sms-turbo"
+  },
+  "author": "codeeraayush",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/codeeraayush/react-native-sms-turbo/issues"
+  },
+  "homepage": "https://github.com/codeeraayush/react-native-sms-turbo#readme",
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org/"
+  },
+  "devDependencies": {
+    "react": "^19.0.0",
+    "react-native": "^0.84.0",
+    "react-native-builder-bob": "^0.35.0",
+    "typescript": "^5.8.0"
+  },
+  "peerDependencies": {
+    "react": ">=18.0.0",
+    "react-native": ">=0.76.0"
+  },
+  "codegenConfig": {
+    "name": "SMSManagerSpec",
+    "type": "all",
+    "jsSrcsDir": "src",
+    "android": {
+      "javaPackageName": "com.smsturbo"
+    }
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      [
+        "commonjs",
+        {
+          "esm": true
+        }
+      ],
+      "module",
+      "typescript"
+    ]
+  }
+}

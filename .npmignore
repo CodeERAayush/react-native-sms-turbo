@@ -1,0 +1,13 @@
+node_modules/
+src/
+tsconfig.json
+android/build/
+ios/build/
+.gradle/
+example/
+__tests__/
+__mocks__/
+__fixtures__/
+.eslintrc*
+.prettierrc*
+.editorconfig
